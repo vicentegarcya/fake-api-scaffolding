@@ -10,5 +10,7 @@ router.get('/', (req, res, next) => {
 router.get('/courses', courses.list);
 router.get('/courses/new', courses.createCourse);
 router.get('/courses/:id', courses.listOneCourse);
+router.post('/courses', courses.doCreateCourse);
+/* router.post('/courses/:id/delete', courses.deleteCourse); */
 
 module.exports = router;

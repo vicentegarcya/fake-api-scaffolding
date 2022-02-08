@@ -21,6 +21,10 @@ module.exports.createCourse = (req, res, next) => {
 }
 
 module.exports.doCreateCourse = (req, res, next) => {
-    //...
+    coursesService.createCourse(req.body)
+        .then((response) => {
+            res.redirect(`/courses/${response.data.id}`);
+        })
+        .catch(err => next(err));
 }
 
