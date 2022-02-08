@@ -11,8 +11,16 @@ module.exports.list = (req, res, next) => {
 module.exports.listOneCourse = (req, res, next) => {
     coursesService.getCourse(req.params.id)
         .then((response) => {
-            console.log(response.data)
             res.render('detailCourse', { course: response.data });
         })
         .catch(err => next(err));
 }
+
+module.exports.createCourse = (req, res, next) => {
+    res.render('newCourse');
+}
+
+module.exports.doCreateCourse = (req, res, next) => {
+    //...
+}
+

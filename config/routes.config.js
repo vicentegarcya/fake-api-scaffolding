@@ -8,6 +8,7 @@ router.get('/', (req, res, next) => {
 
 // Courses routes
 router.get('/courses', courses.list);
+router.get('/courses/new', courses.createCourse);
 router.get('/courses/:id', courses.listOneCourse);
 
 module.exports = router;
