@@ -7,13 +7,13 @@
                     <div class="card-header">
                         <h3>{{course.name}}</h3>
                     </div>
-                        <div class="card-body">
-                            <p class="card-title">{{course.type}}</p>
-                            <a class="btn btn-light" href="/courses/{{course.id}}">See Course</a>
-                            <form class="d-inline" action="/courses/{{course.id}}/delete" method="post">
-                                <button type="submit" class="btn btn-danger">Delete</a>
-                            </form>
-                        </div>
+                    <div class="card-body">
+                        <p class="card-title">{{course.type}}</p>
+                        <a class="btn btn-light" href="/courses/{{course.id}}">See Course</a>
+                        <form class="d-inline" action="/courses/{{course.id}}/delete" method="post">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </div>
                 </div>  
             </div>
         {{/each}}
