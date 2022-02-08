@@ -17,3 +17,21 @@
     margin: 25px 0 30px 0;
 }
 
+#courses-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses-div {
+    width: 50%;
+}
+
+#course-details-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
