@@ -10,12 +10,14 @@
                     <div class="card-body">
                         <p class="card-title">{{course.type}}</p>
                         <a class="btn btn-light" href="/courses/{{course.id}}">See Course</a>
-                        <form class="d-inline" action="/courses/{{course.id}}/delete" method="post">
-                            <button type="submit" class="btn btn-danger">Delete</button>
-                        </form>
+                        <button type="button" value="{{course.id}}" class="btn btn-danger delete-button">Delete</button>
                     </div>
                 </div>  
             </div>
         {{/each}}
     </div>
 </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/deleteClient.js"></script>

@@ -37,6 +37,16 @@
       "name": "UX/UI",
       "type": "Part Time",
       "id": 4
+    },
+    {
+      "name": "Cibersecurity",
+      "type": "Full Time",
+      "id": 5
+    },
+    {
+      "name": "Cibersecurity",
+      "type": "Part Time",
+      "id": 6
     }
   ],
   "bootcamps": [
@@ -46,19 +56,9 @@
       "courseId": 1
     },
     {
-      "id": 2,
-      "cityId": 2,
-      "courseId": 2
-    },
-    {
       "id": 3,
       "cityId": 3,
       "courseId": 1
-    },
-    {
-      "id": 4,
-      "cityId": 4,
-      "courseId": 2
     }
   ]
 }

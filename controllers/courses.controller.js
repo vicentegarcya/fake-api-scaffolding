@@ -28,11 +28,3 @@ module.exports.doCreateCourse = (req, res, next) => {
         .catch(err => next(err));
 }
 
-module.exports.deleteCourse = (req, res, next) => {
-    coursesService.deleteCourse(req.params.id)
-        .then(() => {
-            res.redirect('/courses');
-        })
-        .catch(err => next(err))
-}
-
